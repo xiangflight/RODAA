@@ -1,5 +1,7 @@
 # RODAA
-road of data structure and algorithms
+Road of Data structure And Algorithms
+
+
 
 ## Lessons
 
@@ -7,7 +9,7 @@ road of data structure and algorithms
 |:--:|:--:|
 |1|Data structures (YouTube mycodeschool)|
 
-***
+
 
 ## Practices
 
