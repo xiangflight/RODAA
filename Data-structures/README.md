@@ -31,5 +31,10 @@ Get the address of the first node and treasure hunt.
 
 #### Comparison
 
-
+|                      |        Array        |                      LinkedList                       |
+| :------------------: | :-----------------: | :---------------------------------------------------: |
+|  Cost of accessing  |        O(1)         |                         O(n)                          |
+| Memory requiremenets |     Fixed size      | No unused memory need memory for pointer var |
+|  Cost of inserting  | O(n)/O(1);O(n)/O(n) |  O(1)/O(n)/O(n)(position at beginning, end, middle)   |
+|Easy to use|Yes|No|
 
