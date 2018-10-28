@@ -10,7 +10,7 @@ we will talk about data structures as:
 
 ## List
 
-**ADT**
+### ADT
 
 - Empty list has size 0
 - Insert --- O(n) | Add --- O(n)
@@ -19,13 +19,17 @@ we will talk about data structures as:
 - Read/Modify element at a position --- O(1)
 - Specify data type
 
-#### **Implementation**
+### Implementation
 
-### Array
+#### Array
 
 If list is **full of array**, create a larger array of **double size of the previous array** and copy all the elements from the previous array into the new array, then free the memory for the previous array.
 
-### LinkedList
+#### LinkedList
 
 Get the address of the first node and treasure hunt.
+
+#### Comparison
+
+
 
