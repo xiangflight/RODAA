@@ -1,5 +1,5 @@
 # RODAA
-Road Of Data structure And Algorithms
+Road Of Data structures And Algorithms
 
 
 
