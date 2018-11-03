@@ -38,3 +38,11 @@ Get the address of the first node and treasure hunt.
 |  Cost of inserting  | O(n)/O(1);O(n)/O(n) |  O(1)/O(n)/O(n)(position at beginning, end, middle)   |
 |Easy to use|Yes|No|
 
+#### Doubly Linked List
+
+Linked list can be divided to two types: singly linked list and doubly linked list.
+
+Advantages: Reverse look-up.
+
+Disadvantages: Extra memory for pointer to previous node.
+

@@ -14,6 +14,8 @@ void insertAtEnd(int num);
 void deleteNode(int n); // delete node at position n
 void reverse();
 void print();
+void printUsingRecursion(Node* p);
+Node* reverseRecursion(Node* p);
 
 int main()
 {
@@ -45,6 +47,10 @@ int main()
     print();
     std::cout << "Now reverse the list: " << std::endl;
     reverse();
+    print();
+    printUsingRecursion(head);
+    std::cout << std::endl;
+    head = reverseRecursion(head);
     print();
     return 0;
 }
@@ -124,4 +130,20 @@ void print() {
         temp = temp -> next;
     }
     std::cout << "" << std::endl;
+}
+
+void printUsingRecursion(Node* p) {
+    if (p == nullptr) return;
+    std::cout << " " << p -> data;
+    printUsingRecursion(p -> next);
+}
+
+Node* reverseRecursion(Node* p) {
+    if (p -> next == nullptr) {
+        return p;
+    }
+    Node* q = reverseRecursion(p -> next);
+    p -> next -> next = p;
+    p -> next = nullptr;
+    return q;
 }
