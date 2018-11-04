@@ -46,3 +46,12 @@ Advantages: Reverse look-up.
 
 Disadvantages: Extra memory for pointer to previous node.
 
+#### Circular Linked List
+
+------
+
+## Stack
+
+### ADT
+
+### Implementation
