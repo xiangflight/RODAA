@@ -38,7 +38,7 @@ Get the address of the first node and treasure hunt.
 |  Cost of inserting  | O(n)/O(1);O(n)/O(n) |  O(1)/O(n)/O(n)(position at beginning, end, middle)   |
 |Easy to use|Yes|No|
 
-#### Doubly Linked List
+#### Doubly LinkedList
 
 Linked list can be divided to two types: singly linked list and doubly linked list.
 
@@ -46,12 +46,25 @@ Advantages: Reverse look-up.
 
 Disadvantages: Extra memory for pointer to previous node.
 
-#### Circular Linked List
+#### Circular LinkedList
 
 ------
 
-## Stack
+
+
+## Stack(LIFO)
 
 ### ADT
 
+A list with the restriction that insertion and deletion can be performed **only from one end**, called the top.
+
+- Push --- O(1)
+- Pop --- O(1)
+- Top --- O(1)
+- IsEmpty --- O(1)
+
 ### Implementation
+
+#### Array
+
+#### LinkedList
