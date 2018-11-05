@@ -68,3 +68,5 @@ A list with the restriction that insertion and deletion can be performed **only 
 #### Array
 
 #### LinkedList
+
+Implement stack by using **insert at the beginning** of linked list.
