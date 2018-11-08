@@ -70,3 +70,32 @@ A list with the restriction that insertion and deletion can be performed **only 
 #### LinkedList
 
 Implement stack by using **insert at the beginning** of linked list.
+
+#### Application
+
+- Reverse a string or linkedlist
+- Parenthesis balanced checked
+- Infix Postfix Prefix
+
+------
+
+
+
+## Queue(FIFO)
+
+### ADT
+
+A list or collection with the restriction that **insertion can be performed at one end (rear)**, and deletion **can be performed at other end (front)**.
+
+- Enqueue --- O(1)
+- Dequeue --- O(1)
+- Front --- O(1)
+- IsEmpty --- O(1)
+
+### Implementation
+
+#### Application
+
+- Printer queue
+- Process scheduling
+- simulating wait
