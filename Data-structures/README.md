@@ -71,7 +71,7 @@ A list with the restriction that insertion and deletion can be performed **only 
 
 Implement stack by using **insert at the beginning** of linked list.
 
-#### Application
+### Application
 
 - Reverse a string or linkedlist
 - Parenthesis balanced checked
@@ -104,7 +104,7 @@ A list or collection with the restriction that **insertion can be performed at o
 tail pointer to the last node
 
 
-#### Application
+### Application
 
 - Printer queue
 - Process scheduling
@@ -114,8 +114,33 @@ tail pointer to the last node
 
 
 
-## Tree
+## Tree(Non-linear)
+
+### Concept
+
+- root, child, parent
+- Sibling: same parent
+- Cousin: same grandparent
+- Leaf: has no child
+- ancestor, descendent
+
+### Property
+
+- **N** nodes
+- **N - 1** edges (one incoming edge for each node except the root)
+- **Depth**: number of edges from root to the node
+- **Height**: number of edges in longest path from node to a leaf
+- **Height of Tree**: height of root node
+- Binary Tree: a tree in which each node can have at most 2 children
 
 ### ADT
 
 ### Implementation
+
+### Application
+
+- Storing naturally hierarchical data (eg: file system)
+- Organize data for quick search, insertion, deletion (eg: binary search tree)
+- Trie (eg: dictionary)
+- Network routing algorithm
+
