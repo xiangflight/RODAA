@@ -94,8 +94,28 @@ A list or collection with the restriction that **insertion can be performed at o
 
 ### Implementation
 
+#### Array
+
+- circular array
+- front and rear (tail)
+
+#### LinkedList
+
+tail pointer to the last node
+
+
 #### Application
 
 - Printer queue
 - Process scheduling
 - simulating wait
+
+------
+
+
+
+## Tree
+
+### ADT
+
+### Implementation
