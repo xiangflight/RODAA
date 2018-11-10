@@ -163,6 +163,12 @@ tail pointer to the last node
 
 ## Binary Search Tree
 
+### ADT
+
+- Insert --- O(logn)
+- Search --- O(logn)
+- Remove --- O(logn)
+
 ### Comparison
 
 |           | Array | LinkedList | Array(sorted) | BST(balanced) |

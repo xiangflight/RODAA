@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -41,12 +42,70 @@ bool search(BstNode* root, int data) {
     }
 }
 
+int findMin(BstNode* root) {
+    if (root == nullptr) {
+        cout << "Error: tree is empty" << endl;
+        return -1;
+    }
+    while (root -> left != nullptr) {
+        root = root -> left;
+    }
+    return root -> data;
+}
+
+int findMax(BstNode* root) {
+    if (root == nullptr) {
+        cout << "Error: tree is empty" << endl;
+        return -1;
+    }
+    while (root -> right != nullptr) {
+        root = root -> right;
+    }
+    return root -> data;
+}
+
+int findMinRecursion(BstNode* root) {
+    if (root == nullptr) {
+        cout << "Error: tree is empty" << endl;
+        return -1;
+    }
+    if (root -> left == nullptr) {
+        return root -> data;
+    }
+    return findMinRecursion(root -> left);
+}
+
+int findMaxRecursion(BstNode* root) {
+    if (root == nullptr) {
+        cout << "Error: tree is empty" << endl;
+        return -1;
+    }
+    if (root -> right == nullptr) {
+        return root -> data;
+    }
+    return findMaxRecursion(root -> right);
+}
+
+int findHeight(BstNode* root) {
+    if (root == nullptr) {
+        return -1;
+    }
+    return max(findHeight(root -> left), findHeight(root -> right)) + 1;
+}
+
 int main() {
     BstNode* root = nullptr; // create an empty tree
     root = insert(root, 15);
     root = insert(root, 10);
     root = insert(root, 20);
     root = insert(root, 12);
+    root = insert(root, 2);
+    root = insert(root, 21);
+    root = insert(root, 100);
+    int height = findHeight(root);
+    int max = findMax(root);
+    int min = findMin(root);
+    cout << "Tree height: " << height << ", max: " << max << ", min: " << min << endl;
     int num;
     cout << "Please enter a number to be searched: ";
     cin >> num;
