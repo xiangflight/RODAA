@@ -123,6 +123,7 @@ tail pointer to the last node
 - Cousin: same grandparent
 - Leaf: has no child
 - ancestor, descendent
+- Traversal: process of visiting each node in the tree exactly once in some order
 
 ### Property
 
@@ -143,6 +144,12 @@ tail pointer to the last node
 - **Balanced binary tree**: difference between height of left and right subtree for every node is not more than k (mostly 1)
 
 ### ADT
+
+Traversal strategies: **breadth-first** and **depth-first**
+
+Breadth-first: **Level-order**
+
+Depth-first: **Pre-order**, **In-order**, **Post-order**
 
 ### Implementation
 
