@@ -13,6 +13,25 @@ bool isBinarySearchTree(Node* root);
 
 bool isBstUtil(Node* root, int minValue, int maxValue);
 
+int lastVisited = INT_MIN;
+
+// use inorder traversal to judge, ascending order
+bool isBST(Node* root) {
+    if (root == nullptr) return true;
+    if (!isBST(root -> left)) {
+        return false;
+    }
+    int curVal = root -> data;
+    if (curVal < lastVisited) {
+        return false;
+    }
+    lastVisited = curVal;
+    if (!isBST(root -> right)) {
+        return false;
+    }
+    return true;
+}
+
 int main() {
  
     return 0;
@@ -32,3 +51,6 @@ bool isBstUtil(Node* root, int minValue, int maxValue) {
 bool isBinarySearchTree(Node* root) {
     return isBstUtil(root, INT_MIN, INT_MAX);
 }
+
+
+
