@@ -221,6 +221,8 @@ And
 - |E|: number of edges
 - **Walk**: a sequence of vertices where each adjacent pair is connected by an edge
 - **closed walk**: starts and ends at same vertex
+- **simple circle**: no repetition other than start and end
+- **acyclic graph**: a graph with no cycle
 - **Path**: a **walk** in which no vertices (and thus no edges) are repeated
 - **Trail**: a **walk** in which no edges are repeated
 - **Self loop**: if it involves only 1 vertex
