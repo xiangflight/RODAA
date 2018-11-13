@@ -187,3 +187,51 @@ Depth-first: **Pre-order**, **In-order**, **Post-order**
 ### Concept
 
 A binary tree in which for each node, value of all the nodes in left subtree is lesser or equal and value of all the nodes in right subtree is greater.
+
+------
+
+
+
+## Graph(Non-linear)
+
+### Concept
+
+A graph G is an ordered pair of a set V of vertices and a set E of edges. **G = (V, E)**, this is a ordered pair.
+
+**Two** types of graphs:
+
+- A directed graph or **digraph**
+- An undirected graph
+
+And
+
+- A weighted graph
+- An unweighted graph
+
+**Examples**:
+
+- Social network (unweighted, undirected graph)
+- Web page(unweighted, directed graph)
+- IntroCity road(weighed, undirected graph)
+- IntraCity road(weighted, directed graph)
+
+### Property
+
+- |V|: number of vertices
+- |E|: number of edges
+- **Walk**: a sequence of vertices where each adjacent pair is connected by an edge
+- **closed walk**: starts and ends at same vertex
+- **Path**: a **walk** in which no vertices (and thus no edges) are repeated
+- **Trail**: a **walk** in which no edges are repeated
+- **Self loop**: if it involves only 1 vertex
+- **Multiedge** or Paralle edge: if it occurs more than once in a graph
+- **Strong connected** graphs: if there is path from any vertex to any other vertex
+
+Number of edges in a simple graph(no self loop or multiedge):
+
+if |V| = n, then:
+
+- 0 <= |E| <= n(n - 1), if **directed**
+- 0 <= |E| <= n(n - 1) / 2, if **undirected** 
+- **Dense** -> too many edges
+- **Sparse** -> few edges
