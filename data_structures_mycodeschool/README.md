@@ -151,12 +151,6 @@ Breadth-first: **Level-order**
 
 Depth-first: **Pre-order**, **In-order**, **Post-order**
 
-### Implementation
-
-#### Array(used for heap)
-
-#### LinkedList(dynamically created nodes)
-
 ### Application
 
 - Storing naturally hierarchical data (eg: file system)
@@ -212,8 +206,8 @@ And
 
 - Social network (unweighted, undirected graph)
 - Web page(unweighted, directed graph)
-- IntroCity road(weighed, undirected graph)
-- IntraCity road(weighted, directed graph)
+- IntraCity road(weighed, undirected graph)
+- InterCity road(weighted, directed graph)
 
 ### Property
 
@@ -237,3 +231,35 @@ if |V| = n, then:
 - 0 <= |E| <= n(n - 1) / 2, if **undirected** 
 - **Dense** -> too many edges
 - **Sparse** -> few edges
+
+### Representation
+
+**Edge List**:
+
+- Time Complexity: 
+  - O(|E|) --- > costly, near square of |v^2| in finding adjacent nodes or checking if given nodes are connected
+- Space Complexity: 
+  - O(|V| + |E|)
+
+
+
+**Adjacency Matrix**:
+
+- Time Complexity:
+
+  - Finding adjacent nodes: O(|V|)
+  - Checking if two nodes are connected: O(1)
+
+- Space Complexity:
+
+  - O(|V|^2)
+
+- Usage:
+
+  - if graph is dense or |V|^2 is too less to matter
+
+
+
+**Adjacency List**:
+
+
