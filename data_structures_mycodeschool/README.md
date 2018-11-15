@@ -274,4 +274,3 @@ if |V| = n, then:
 - Usage:
 
   - if graph is sparse {social network}
-
