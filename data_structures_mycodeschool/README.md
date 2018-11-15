@@ -262,4 +262,16 @@ if |V| = n, then:
 
 **Adjacency List**:
 
+- Time Complexity:
+
+  - Finding adjacent nodes: O(|V|) {in worst case}
+  - Checking if two nodes are connected: O(|V|) {linear search, in worst case}
+
+- Space Complexity:
+
+  - O(|E| + |V|) {|E| << |V|^2 in most graphs}
+
+- Usage:
+
+  - if graph is sparse {social network}
 
