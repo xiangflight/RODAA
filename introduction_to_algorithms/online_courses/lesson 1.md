@@ -1,3 +1,0 @@
-## Algorithmic Thinking, Peak Finding
-
-

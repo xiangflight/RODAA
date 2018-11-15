@@ -8,7 +8,7 @@ Road Of Data structures And Algorithms
 |Phase|Resource|
 |:--:|:--:|
 |1|[Data structures](https://bit.ly/1NPQ2wQ)|
-|2|[Introduction to Algorithms](https://bit.ly/1BEh9DL)|
+|2|Algorithms series|
 
 
 
