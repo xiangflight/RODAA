@@ -18,3 +18,8 @@ we will talk about data structures as:
 |    4     |                             [Tree](https://github.com/xiangflight/RODAA/tree/master/data_structures_mycodeschool/tree/)                             |
 |    5     |                            [Graph](https://github.com/xiangflight/RODAA/tree/master/data_structures_mycodeschool/graph/)                             |
 
+
+## Video source
+
+Data structures and Algorithms: https://bit.ly/1NPQ2wQ
+

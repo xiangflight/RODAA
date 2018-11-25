@@ -1,8 +1,8 @@
 ## Couses List
 
-| Sequence | Lecture |
-| :------: | :-----: |
-|    1     |         |
-|    2     |         |
-|    3     |         |
+| Sequence |         Lecture         |
+| :------: | :---------------------: |
+|    1     | Introduction and Proofs |
+|    2     |                         |
+|    3     |                         |
 

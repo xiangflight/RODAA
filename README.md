@@ -3,12 +3,12 @@ Road Of Data structures And Algorithms
 
 
 
-## Lessons
+## Lectures
 
 |Phase|Resource|
 |:--:|:--:|
-|1|[Data structures](https://bit.ly/1NPQ2wQ)|
-|2|Algorithms series|
+|1|[Data structures](https://github.com/xiangflight/RODAA/tree/master/data_structures_mycodeschool)|
+|2|[Algorithms series](https://github.com/xiangflight/RODAA/tree/master/algorithms_series-MIT)|
 
 
 
@@ -16,5 +16,6 @@ Road Of Data structures And Algorithms
 
 |Phase|Resource|
 |:--:|:--:|
-|1|Leetcode|
+|1|CLRS|
+|2|Leetcode|
 
