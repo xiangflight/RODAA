@@ -1,9 +1,9 @@
 ## Learning Order
 
 
-| Sequence |      Chapter       |
-| :------: | :----------------: |
-|    1     |     第1章 绪论     |
-|    2     |    第2章 线性表    |
-|    3     | 第5章 数组和广义表 |
+| Sequence |   Chapter   |
+| :------: | :---------: |
+|    1     |    Intro    |
+|    2     | Linear List |
+|    3     |   Arrays    |
 
