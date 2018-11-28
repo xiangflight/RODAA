@@ -74,7 +74,7 @@ int LocateElem(LinkList L, ElemType e, Status (*compare)(ElemType, ElemType)) {
 Status PriorElem(LinkList L, ElemType cur_e, ElemType &pre_e) {
     LinkList q, p = L->next;
     while (p->next) {
-        q = p-next;
+        q = p->next;
         if (q->data == cur_e) {
             pre_e = p->data;
             return OK;
@@ -91,8 +91,50 @@ Status NextElem(LinkList L, ElemType cur_e, ElemType &next_e) {
             next_e = p->next->data;
             return OK;
         }
+        p = p->next;
     }
-    p = p->next;
+    return INFEASIBLE;
 }
 
+Status ListInsert(LinkList L, int i, ElemType e) {
+    int j = 0;
+    LinkList p = L, s;
+    while (p && j < i - 1) {
+        p = p->next;
+        j++;
+    }
+    if (!p || j > i - 1) { // i < 1 or > len(L)
+        return ERROR;
+    }
+    s = (LinkList) malloc(sizeof(LNode));
+    s->data = e;
+    s->next = p->next;
+    p->next = s;
+    return OK;
+}
 
+Status ListDelete(LinkList L, int i, ElemType &e) {
+    int j = 0;
+    LinkList p = L, q;
+    while (p->next && j < i - 1) {
+        p = p->next;
+        j++;
+    }
+    if (!p->next || j > i - 1) {
+        return ERROR;
+    }
+    q = p->next;
+    p->next = q->next;
+    e = q->data;
+    free(q);
+    return OK;
+}
+
+void ListTraverse(LinkList L, void (*vi)(ElemType)) {
+    LinkList p = L->next;
+    while (p) {
+        vi(p->data);
+        p = p->next;
+    }
+    printf("\n");
+}
